@@ -1,0 +1,129 @@
+body {
+  align-items: center;
+  background: url("../images/bg.jpg") #100213;
+  background-blend-mode: difference;
+  background-size: cover;
+  display: flex;
+  height: 930px;
+  justify-content: center;
+  margin: auto;
+}
+.button {
+  background: #ff6701;
+  border: 1px solid #ffee01;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: block;
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  width: 300px;
+}
+.button:hover {
+  background: #aa9104;
+}
+.default {
+  background: url("../images/back.jpg") !important;
+  background-size: cover;
+  background-position: -148px !important;
+  z-index: 999;
+}
+.default::before,
+.default::after {
+  display: none;
+}
+.default p {
+  display: none;
+}
+.card {
+  background: white;
+  border: 1px solid #ffd901;
+  border-radius: 15px;
+  box-shadow: 3px 3px 7px #ff6701;
+  height: 440px;
+  margin: 20px auto;
+  position: relative;
+  width: 300px;
+}
+.card p {
+  font: 20px/50px Arial, serif;
+  font-weight: 700;
+  padding: 60px 16px;
+  position: sticky;
+  text-align: center;
+  z-index: 999;
+}
+div.suit-hearts:before {
+  color: red;
+  content: "♥";
+  font-size: 90px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+div.suit-hearts:after {
+  bottom: 10px;
+  color: red;
+  content: "♥";
+  font-size: 90px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(180deg);
+}
+div.suit-diamonds:before {
+  color: red;
+  content: "♦";
+  font-size: 90px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+div.suit-diamonds:after {
+  bottom: 10px;
+  color: red;
+  content: "♦";
+  font-size: 90px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(180deg);
+}
+div.suit-spades:before {
+  color: black;
+  content: "♠";
+  font-size: 90px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+div.suit-spades:after {
+  bottom: 10px;
+  color: black;
+  content: "♠";
+  font-size: 90px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(180deg);
+}
+div.suit-clubs:before {
+  color: black;
+  content: "♣";
+  font-size: 90px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+div.suit-clubs:after {
+  bottom: 10px;
+  color: black;
+  content: "♣";
+  font-size: 90px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(180deg);
+}

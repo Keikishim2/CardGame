@@ -106,6 +106,17 @@ let card_number = [
 
 let suit = ["Diamonds", "Spades", "Hearts", "Clubs"];
 
+
+$(".card").addClass("default");
+
+$(".button").click(function(e) {
+  e.preventDefault();
+  randomCard();
+  $("audio#card_effect")[0].play();
+  $(".card").removeClass("default");
+});
+randomCard();
+
 function randomCard() {
 
   let card_number_length = card_number.length;
@@ -132,8 +143,3 @@ function randomCard() {
       break;
   }
 }
-randomCard();
-$(".button").click(function(e) {
-  e.preventDefault();
-  randomCard();
-});
