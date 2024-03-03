@@ -1,6 +1,7 @@
 body {
   align-items: center;
-  background: url("../images/bg.jpg") #100213;
+  background: url("https://static.wikia.nocookie.net/kakegurui/images/3/3d/Dual_Clash_Poker.png/revision/latest?cb=20190504184351") #100213;
+  background-repeat: no-repeat;
   background-blend-mode: difference;
   background-size: cover;
   display: flex;
@@ -53,8 +54,9 @@ body {
 }
 .card p {
   font: 20px/50px Arial, serif;
+  text-transform: uppercase;
   font-weight: 700;
-  padding: 60px 16px;
+  padding: 55px 16px;
   position: sticky;
   text-align: center;
   z-index: 999;
